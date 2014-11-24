@@ -10,6 +10,8 @@
 
 @interface ExploreTableViewController ()
 
+@property (nonatomic, strong) UIImageView *bannerImageView;
+
 @end
 
 @implementation ExploreTableViewController
@@ -21,6 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self setupBannerView:self.bannerImageView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -28,26 +31,46 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Propertys
+
+- (UIImageView *)bannerImageView {
+    if (!_bannerImageView) {
+        _bannerImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Banner_Expolor"]];
+        _bannerImageView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+        CGRect bannerImageViewFrame = _bannerImageView.frame;
+        bannerImageViewFrame.origin.y = - (CGRectGetHeight(_bannerImageView.bounds) + self.topLayoutGuide.length);
+        _bannerImageView.frame = bannerImageViewFrame;
+    }
+    return _bannerImageView;
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return 0;
+    return 20;
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    static NSString *cellIdentifier = @"CellIdentifier";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
+    cell.textLabel.text = @"测试";
     
     return cell;
 }
-*/
+
+#pragma mark - Table view delegate
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 60;
+}
 
 @end

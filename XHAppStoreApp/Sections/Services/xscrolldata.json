@@ -1,0 +1,141 @@
+{
+    "result": [
+               {
+               "productSetName" : "Apple",
+               "products": [
+                            {
+                            "productThumbnail" : "gums_ball",
+                            "productName" : "gums_ball",
+                            "productCategoryName" : "教育",
+                            "productPrice" : "￥18"
+                            },
+                            {
+                            "productThumbnail" : "gums_peppermint",
+                            "productName" : "gums_peppermint",
+                            "productCategoryName" : "教育",
+                            "productPrice" : "￥18"
+                            },
+                            {
+                            "productThumbnail" : "gums",
+                            "productName" : "gums",
+                            "productCategoryName" : "教育",
+                            "productPrice" : "￥18"
+                            },
+                            {
+                            "productThumbnail" : "jellybeans_capsule",
+                            "productName" : "jellybeans_capsule",
+                            "productCategoryName" : "教育",
+                            "productPrice" : "￥18"
+                            },
+                            {
+                            "productThumbnail" : "jellybeans_choco",
+                            "productName" : "jellybeans_choco",
+                            "productCategoryName" : "教育",
+                            "productPrice" : "￥18"
+                            },
+                            {
+                            "productThumbnail" : "jellybeans_pack",
+                            "productName" : "jellybeans_pack",
+                            "productCategoryName" : "教育",
+                            "productPrice" : "￥18"
+                            }
+                            ]
+               },
+               {
+               "productSetName" : "iTnues",
+               "products": [
+                            {
+                            "productThumbnail" : "gums_ball",
+                            "productName" : "gums_ball",
+                            "productCategoryName" : "教育",
+                            "productPrice" : "￥18"
+                            },
+                            {
+                            "productThumbnail" : "apricots",
+                            "productName" : "apricots",
+                            "productCategoryName" : "教育",
+                            "productPrice" : "￥18"
+                            },
+                            {
+                            "productThumbnail" : "mango",
+                            "productName" : "mango",
+                            "productCategoryName" : "教育",
+                            "productPrice" : "￥18"
+                            },
+                            {
+                            "productThumbnail" : "oranges",
+                            "productName" : "oranges",
+                            "productCategoryName" : "教育",
+                            "productPrice" : "￥18"
+                            },
+                            {
+                            "productThumbnail" : "pears",
+                            "productName" : "pears",
+                            "productCategoryName" : "教育",
+                            "productPrice" : "￥18"
+                            },
+                            {
+                            "productThumbnail" : "starfruits",
+                            "productName" : "starfruits",
+                            "productCategoryName" : "教育",
+                            "productPrice" : "￥18"
+                            },
+                            {
+                            "productThumbnail" : "strawberries",
+                            "productName" : "strawberries",
+                            "productCategoryName" : "教育",
+                            "productPrice" : "￥18"
+                            }
+                            
+                            ]
+               },
+               {
+               "productSetName" : "Jack",
+               "products": [
+                            {
+                            "productThumbnail" : "jellybeans_capsule",
+                            "productName" : "jellybeans_capsule",
+                            "productCategoryName" : "教育",
+                            "productPrice" : "￥18"
+                            },
+                            {
+                            "productThumbnail" : "jellybeans_choco",
+                            "productName" : "jellybeans_choco",
+                            "productCategoryName" : "教育",
+                            "productPrice" : "￥18"
+                            },
+                            {
+                            "productThumbnail" : "starfruits",
+                            "productName" : "starfruits",
+                            "productCategoryName" : "教育",
+                            "productPrice" : "￥18"
+                            },
+                            {
+                            "productThumbnail" : "gums_ball",
+                            "productName" : "gums_ball",
+                            "productCategoryName" : "教育",
+                            "productPrice" : "￥18"
+                            },
+                            {
+                            "productThumbnail" : "strawberries",
+                            "productName" : "strawberries",
+                            "productCategoryName" : "教育",
+                            "productPrice" : "￥18"
+                            },
+                            {
+                            "productThumbnail" : "gums_peppermint",
+                            "productName" : "gums_peppermint",
+                            "productCategoryName" : "教育",
+                            "productPrice" : "￥18"
+                            },
+                            {
+                            "productThumbnail" : "gums",
+                            "productName" : "gums",
+                            "productCategoryName" : "教育",
+                            "productPrice" : "￥18"
+                            }
+                            
+                            ]
+               },
+               ]
+}

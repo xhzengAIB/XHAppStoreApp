@@ -52,7 +52,9 @@
                 }
                 
             } else {
-                [mappedObject setValue:value forKey:mappedKey];
+                if (value) {
+                    [mappedObject setValue:value forKey:mappedKey];
+                }
             }
         }
         [mappedObjects addObject:mappedObject];

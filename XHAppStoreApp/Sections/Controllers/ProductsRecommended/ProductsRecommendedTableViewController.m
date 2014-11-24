@@ -41,24 +41,8 @@
     
     self.dataSource = [NSArray arrayWithArray:[XScrollDataSourceAccess retrieveObjectsFromPath:@"xscrolldata" ofType:@"json" atRootKeyPath:@"result" forDataSourceMapping:itemsByCategoryKeys]];
     
-    [self.tableView addSubview:self.bannerImageView];
+    [self setupBannerView:self.bannerImageView];
     
-}
-
-- (void)viewDidLayoutSubviews {
-    [super viewDidLayoutSubviews];
-    if ([self respondsToSelector:@selector(topLayoutGuide)]) {
-        UIEdgeInsets currentInsets = self.tableView.contentInset;
-        if (currentInsets.top != CGRectGetHeight(self.bannerImageView.bounds) + self.topLayoutGuide.length) {
-            self.tableView.contentInset = (UIEdgeInsets) {
-                .top = CGRectGetHeight(self.bannerImageView.bounds) + self.topLayoutGuide.length,
-                .bottom = currentInsets.bottom,
-                .left = currentInsets.left,
-                .right = currentInsets.right
-            };
-            [self.tableView setContentOffset:CGPointMake(0, -self.tableView.contentInset.top)];
-        }
-    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -77,22 +61,6 @@
         _bannerImageView.frame = bannerImageViewFrame;
     }
     return _bannerImageView;
-}
-
-#pragma mark - UIScrollView Delegate
-
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    CGFloat max = CGRectGetHeight(self.bannerImageView.bounds) + self.topLayoutGuide.length;
-    NSLog(@"max : %f", max);
-    CGPoint offset = scrollView.contentOffset;
-    if (-offset.y > max) {
-        // 开始固定位置
-        // 意思需要改变frame
-        CGRect bannerFrame = self.bannerImageView.frame;
-        bannerFrame.origin.y = offset.y + self.topLayoutGuide.length;
-        self.bannerImageView.frame = bannerFrame;
-        NSLog(@"banner : %@", NSStringFromCGPoint(self.bannerImageView.frame.origin));
-    }
 }
 
 #pragma mark - Table view data source

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseBannerTableViewController.h"
 
-@interface ProductsRecommendedTableViewController : UITableViewController
+@interface ProductsRecommendedTableViewController : BaseBannerTableViewController
 
 @end

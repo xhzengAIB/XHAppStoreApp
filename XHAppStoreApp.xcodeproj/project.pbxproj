@@ -27,6 +27,7 @@
 		7D305F2C1A23112700413C39 /* xscrolldata.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D305F2B1A23112700413C39 /* xscrolldata.json */; };
 		7D85670F1A2313FD00A75155 /* ProductManagerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D85670E1A2313FD00A75155 /* ProductManagerItem.m */; };
 		7D8567111A2319E000A75155 /* ProductCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D8567101A2319E000A75155 /* ProductCollectionViewCell.xib */; };
+		7D8567151A233C8A00A75155 /* BaseBannerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8567141A233C8A00A75155 /* BaseBannerTableViewController.m */; };
 		98BD3B0C607E52709EA555F9 /* libPods-XHAppStoreApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D75B249973C7F547AA633CD /* libPods-XHAppStoreApp.a */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +81,8 @@
 		7D85670D1A2313FD00A75155 /* ProductManagerItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductManagerItem.h; sourceTree = "<group>"; };
 		7D85670E1A2313FD00A75155 /* ProductManagerItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductManagerItem.m; sourceTree = "<group>"; };
 		7D8567101A2319E000A75155 /* ProductCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductCollectionViewCell.xib; sourceTree = "<group>"; };
+		7D8567131A233C8A00A75155 /* BaseBannerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseBannerTableViewController.h; sourceTree = "<group>"; };
+		7D8567141A233C8A00A75155 /* BaseBannerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseBannerTableViewController.m; sourceTree = "<group>"; };
 		9C45570FD6A192C293125C75 /* Pods-XHAppStoreAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XHAppStoreAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XHAppStoreAppTests/Pods-XHAppStoreAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C548ECC9760378DD66DF5A74 /* Pods-XHAppStoreAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XHAppStoreAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XHAppStoreAppTests/Pods-XHAppStoreAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		D84790DF3B4BBC421BB798AB /* Pods-XHAppStoreApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XHAppStoreApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-XHAppStoreApp/Pods-XHAppStoreApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -188,6 +191,7 @@
 		7D1738911A1EEBF40064A7F2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				7D8567121A233C7B00A75155 /* BaseBannerTableViewController */,
 				7D1738931A1EEBF40064A7F2 /* ProductsRecommended */,
 				7D1738941A1EEBF40064A7F2 /* Rank */,
 				7D1738921A1EEBF40064A7F2 /* Explore */,
@@ -276,6 +280,15 @@
 				7D305F281A23112100413C39 /* XScrollDataSourceMapping.m */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		7D8567121A233C7B00A75155 /* BaseBannerTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7D8567131A233C8A00A75155 /* BaseBannerTableViewController.h */,
+				7D8567141A233C8A00A75155 /* BaseBannerTableViewController.m */,
+			);
+			path = BaseBannerTableViewController;
 			sourceTree = "<group>";
 		};
 		9EB3A44A7B34C5CD692B16FA /* Pods */ = {
@@ -464,6 +477,7 @@
 				7D305F2A1A23112100413C39 /* XScrollDataSourceMapping.m in Sources */,
 				7D305F291A23112100413C39 /* XScrollDataSourceAccess.m in Sources */,
 				7D1738A21A1EEC290064A7F2 /* SearchTableViewController.m in Sources */,
+				7D8567151A233C8A00A75155 /* BaseBannerTableViewController.m in Sources */,
 				7D85670F1A2313FD00A75155 /* ProductManagerItem.m in Sources */,
 				7D305F231A230FCD00413C39 /* ProductItem.m in Sources */,
 				7D1738AC1A1F17690064A7F2 /* HorizontalProductScrolllTableViewCell.m in Sources */,
