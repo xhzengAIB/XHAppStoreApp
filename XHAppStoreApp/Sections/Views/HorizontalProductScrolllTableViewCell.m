@@ -60,6 +60,7 @@
         CGFloat width = 60;
         CGFloat height = 20;
         _lookProductSetButton = [[UIButton alloc] initWithFrame:CGRectMake(CGRectGetWidth(self.contentView.bounds) - width - 20, 0, width, height)];
+        _lookProductSetButton.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin;
         _lookProductSetButton.titleLabel.font = [UIFont systemFontOfSize:14];
         [_lookProductSetButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
         [_lookProductSetButton setTitle:@"查看全部" forState:UIControlStateNormal];

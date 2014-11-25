@@ -57,6 +57,7 @@
         _bannerImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Banner"]];
         _bannerImageView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
         CGRect bannerImageViewFrame = _bannerImageView.frame;
+        bannerImageViewFrame.size.width = CGRectGetWidth(self.tableView.bounds);
         bannerImageViewFrame.origin.y = - (CGRectGetHeight(_bannerImageView.bounds) + self.topLayoutGuide.length);
         _bannerImageView.frame = bannerImageViewFrame;
     }
