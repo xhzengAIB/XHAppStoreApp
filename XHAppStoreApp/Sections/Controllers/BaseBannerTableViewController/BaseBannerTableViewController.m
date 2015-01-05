@@ -21,6 +21,11 @@
         [self.bannerView removeFromSuperview];
         self.bannerView = nil;
     }
+    
+    CGRect bannerImageViewFrame = bannerView.frame;
+    bannerImageViewFrame.origin.y = - (CGRectGetHeight(bannerView.bounds) + self.topLayoutGuide.length);
+    bannerView.frame = bannerImageViewFrame;
+    
     [self.tableView addSubview:bannerView];
     self.bannerView = bannerView;
 }
@@ -32,7 +37,7 @@
     if ([self respondsToSelector:@selector(topLayoutGuide)]) {
         UIEdgeInsets currentInsets = self.tableView.contentInset;
         if (currentInsets.top != CGRectGetHeight(self.bannerView.bounds) + self.topLayoutGuide.length) {
-            self.tableView.contentInset = (UIEdgeInsets) {
+            self.tableView.scrollIndicatorInsets = self.tableView.contentInset = (UIEdgeInsets) {
                 .top = CGRectGetHeight(self.bannerView.bounds) + self.topLayoutGuide.length,
                 .bottom = currentInsets.bottom,
                 .left = currentInsets.left,

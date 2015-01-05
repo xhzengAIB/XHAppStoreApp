@@ -54,12 +54,9 @@
 
 - (UIImageView *)bannerImageView {
     if (!_bannerImageView) {
-        _bannerImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Banner"]];
+        _bannerImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), 140)];
+        _bannerImageView.image = [UIImage imageNamed:@"Banner"];
         _bannerImageView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-        CGRect bannerImageViewFrame = _bannerImageView.frame;
-        bannerImageViewFrame.size.width = CGRectGetWidth(self.tableView.bounds);
-        bannerImageViewFrame.origin.y = - (CGRectGetHeight(_bannerImageView.bounds) + self.topLayoutGuide.length);
-        _bannerImageView.frame = bannerImageViewFrame;
     }
     return _bannerImageView;
 }
